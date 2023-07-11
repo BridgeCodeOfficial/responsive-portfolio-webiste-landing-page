@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style128.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <div class="menu">
+            <ul class="menu-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" id="toggle"></i>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-left">
+            <h3>Hi, my name is</h3>
+            <h1>Henry Thomas</h1>
+            <h2>and I'm a <span>Frontend Developer</span></h2>
+            <div class="btn-bx">
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="image">
+                <img src="Images/128 - Character1.png" alt="">
+            </div>
+        </div> 
+    </section>
+    
+    <div class="social-icons">
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+
+    <script>
+        const toggle = document.querySelector('#toggle');
+        const menu = document.querySelector('.menu-links');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
